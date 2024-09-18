@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+}
+.objeto{
+    padding: 20px;
+    background-color: beige;
+    color: darkgoldenrod;
+    border-radius: 10px;
+    cursor: pointer;
+}
+table{
+    margin: auto;
+    width: 50%;
+}
+input{
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.objeto:hover{
+    background-color: blue;
+    font-weight: bold ; /*negrita*/
+
+}

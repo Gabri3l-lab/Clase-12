@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baner</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script>
+        function calcular(){
+            let xb=document.getElementById('txtBase').value;
+            if (xb == 0){
+                alert("debes ingresar un número mayor a 0")
+            }
+            let xa=document.getElementById('txtAltura').value;
+
+            if (xa == 0){
+                alert("altura -> Debes ingresar un número mayor a 0")   
+            }
+            let xarea=(xb*xa)/2;
+            document.getElementById('txtArea').value=xarea.toFixed(2);
+        }
+        function limpiar(){
+            document.getElementById('txtBase').value="";
+            document.getElementById('txtAltura').value="";
+            document.getElementById('txtArea').value="0.00";
+            document.getElementById('txtBase'),focus();
+        }
+
+    </script>
+</head>
+<body>
+    <div style="text-align:center ;">
+        <img src="img/banner.jpg" alt="">
+    </div>
+    <h1>AREA DEL TRIANGULO</h1>
+    <hr>
+    <form action="">
+        <table>
+            <tr>
+                <td>Base</td>
+                <td>
+                    <input type="number" name="" id="txtBase"> m
+                </td>
+            </tr>
+            <tr>
+                <td>Altura</td>
+                <td>
+                    <input type="number" name="" id="txtAltura"> m
+                </td>
+            </tr>
+            <tr>
+                <td>Area</td>
+                <td>
+                    <input type="text" name="" value="0.00" id="txtArea" disabled> m2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="objeto" onclick="calcular();" type="button" value="Calcular">
+                </td>
+                <td>
+                    <input class="objeto" onclick="limpiar();" type="button" value="limpiar">
+                </td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
